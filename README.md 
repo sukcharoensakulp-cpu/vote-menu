@@ -1,0 +1,49 @@
+# 🍜 KinAraiDee (มื้อนี้กินไรดี?)
+
+เว็บแอปพลิเคชันช่วยสุ่มและตัดสินใจเลือกเมนูอาหารประจำวัน เพื่อแก้ปัญหาสุดฮิต "มื้อนี้จะกินอะไรดี?" ออกแบบให้ใช้งานง่าย โหลดไว ประมวลผลและจัดเก็บข้อมูลแบบ **Client-Side (Local-First)** บนเครื่องของผู้ใช้ทันที โดยไม่ต้องพึ่งพา Database ภายนอก
+
+---
+
+## ✨ คุณสมบัติเด่น (Features)
+
+* 🎲 **ระบบสุ่มและกรองเมนู (Smart Menu Randomizer):**
+  * สุ่มรายการอาหารพร้อมเอฟเฟกต์แอนิเมชัน ช่วยเพิ่มความสนุกในการเลือกมื้ออาหาร
+  * ระบบกรองอาหารตามประเภท เช่น *ตามสั่ง, ก๋วยเตี๋ยว, อาหารคลีน, ของหวาน*
+  * จัดเก็บประวัติและรายการเมนูลงใน `localStorage` ของเบราว์เซอร์อัตโนมัติ
+
+* ⚡ **ประสิทธิภาพและความเร็ว (Performance First):**
+  * พัฒนาด้วย **Vite** ให้การโหลดหน้าเว็บและตอบสนองที่รวดเร็ว
+  * รองรับการประมวลผลบนเครื่องผู้ใช้ทั้งหมด ทำงานได้เรียบลื่นแม้สัญญาณเน็ตช้า
+
+* 📱 **การแสดงผลสวยงามทุกอุปกรณ์ (Responsive UI):**
+  * จัดสไตล์ด้วย **Tailwind CSS (PostCSS)** รองรับการแสดงผลทุกขนาดหน้าจอ
+  * รองรับการใช้งานทั้งบน สมาร์ตโฟน, แท็บเล็ต และคอมพิวเตอร์
+
+---
+
+## 🛠️ เทคโนโลยีที่ใช้ (Tech Stack)
+
+* **Core & Framework:** React / JavaScript (ES6+)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **CSS Engine:** [Tailwind CSS v4](https://tailwindcss.com/) (`@tailwindcss/postcss`)
+* **CSS Post-Processor:** `autoprefixer`
+* **Data Persistence:** Browser `localStorage`
+
+---
+
+## 📜 คำสั่งสำหรับพัฒนาโปรเจกต์ (Scripts)
+
+สามารถใช้คำสั่งต่อไปนี้ผ่าน Terminal เพื่อควบคุมการทำงานของโปรเจกต์:
+
+* ⚡ `npm run dev` : รัน Local Server ในโหมดพัฒนา (Development) พร้อมระบบ Hot Module Replacement (HMR) แก้ไขโค้ดแล้วแสดงผลทันที
+* 📦 `npm run build` : รวบรวม ย่อขนาดไฟล์ (Minify) และประกอบโปรเจกต์สำหรับนำไปปรับใช้จริง (Production Build) โดยไฟล์ทั้งหมดจะถูกจัดเก็บไว้ที่โฟลเดอร์ `dist/`
+* 🔍 `npm run preview` : เปิดคำสั่งจำลองเพื่อทดสอบรันไฟล์ที่ผ่านการ Build ในโฟลเดอร์ `dist/` บน Local Server เพื่อตรวจสอบความถูกต้องก่อนนำขึ้น Hosting
+
+---
+
+## 🚀 การติดตั้งและเปิดใช้งาน (Getting Started)
+
+1. **ดาวน์โหลดโปรเจกต์ (Clone Repository):**
+   ```bash
+   git clone [https://github.com/your-username/kin-arai-dee.git](https://github.com/your-username/kin-arai-dee.git)
+   cd kin-arai-dee
